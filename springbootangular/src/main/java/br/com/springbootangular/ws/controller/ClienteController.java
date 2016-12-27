@@ -20,7 +20,7 @@ public class ClienteController {
 	@Autowired
 	private ClienteService clienteService;
 
-	@RequestMapping(value = "/cliente", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/cliente", method = RequestMethod.POST, consumes =  MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Cliente> cadastrarCliente(@RequestBody Cliente cliente) {
 
 		Cliente clienteCadastrado = clienteService.cadastrar(cliente);
